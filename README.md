@@ -24,9 +24,9 @@ A browser-based memory game inspired by the classic Simon toy. Watch the colour 
 
 ## Controls
 
--- Mouse click : Press a colour pad 
--- Keys `1`–`4` : Press the matching pad 
--- Arrow keys : Press the matching pad 
+- Mouse click : Press a colour pad 
+- Keys `1`–`4` : Press the matching pad
+- Arrow keys : Press the matching pad 
 
 
 Built by Vardaan Srivastava, with a little help from AI.
