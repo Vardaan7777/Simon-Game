@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Says game Advanced!!!</title>
+</head>
+<body>
+
+    <div class="game-console">
+        <h1>Simon Game</h1>
+
+        <div class="info-bar">
+            <div class="badge" id="level-badge">
+                Level <span id="level-display">0</span>
+            </div>
+            <div class="badge">
+                High Score <span id="highscore-display">0</span>
+            </div>
+        </div>
+
+        <h2 id="status-text">Press Start to play</h2>
+
+        <div class="btn-container">
+            <div class="line-one">
+                <div class="btn red" id="red"></div>
+                <div class="btn yellow" id="yellow"></div>
+            </div>
+            <div class="line-two">
+                <div class="btn green" id="green"></div>
+                <div class="btn purple" id="purple"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="control-btn">Start Game</button>
+
+            <select id="difficulty-select" class="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <p class="key-hint">Keys: 1‑4 / Arrow keys</p>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+            <h2>Game Over</h2>
+            <p>Your score: <span id="modal-score">0</span></p>
+            <p>High score: <span id="modal-highscore">0</span></p>
+            <button id="modal-close-btn" class="control-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
